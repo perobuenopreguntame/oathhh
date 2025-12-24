@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Oath for Matti</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+    margin: 0;
+    background: radial-gradient(circle at top, #0b1c2d, #000814);
+    color: #dbe9f4;
+    font-family: "Georgia", serif;
+    overflow-x: hidden;
+}
+
+/* LOADING SCREEN */
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000814;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#loading h1 {
+    font-size: 2em;
+    letter-spacing: 4px;
+}
+
+#loading p {
+    opacity: 0.7;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* MAIN */
+#main {
+    display: none;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* TEXT */
+p {
+    line-height: 1.8;
+    font-size: 1.05em;
+    margin-bottom: 18px;
+}
+
+/* PASSWORD */
+#gate {
+    margin-top: 40px;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    background: #020c18;
+    border: 1px solid #3a5f7d;
+    color: white;
+}
+
+button {
+    padding: 10px 16px;
+    background: #0e2a47;
+    color: white;
+    border: none;
+    margin-left: 5px;
+}
+
+button:hover {
+    background: #143b63;
+}
+
+/* SECRET */
+#secret {
+    display: none;
+    margin-top: 40px;
+    border-top: 1px solid #3a5f7d;
+    padding-top: 30px;
+}
+
+/* GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin-top: 30px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+.gallery img:hover {
+    opacity: 1;
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOADING -->
+<div id="loading">
+    <h1>DEEPWOKEN</h1>
+    <p>Loading world data...</p>
+    <p>Connecting to the Depths...</p>
+</div>
+
+<!-- AUDIO -->
+<audio controls>
+  <source src="https://drive.google.com/uc?export=download&id=1V7xId34QgqTAU6lFRd6KTgziTllk--6b" type="audio/mpeg">
+</audio>
+
+<!-- MAIN -->
+<div id="main">
+
+<h2>Oath for Matti</h2>
+<h3>— Cosita —</h3>
+
+<p>My Matti, I adore when you talk about the things that I love. Every word, every detail, every moment you get excited—it makes my heart feel full. I love playing Deepwoken with you, laughing when we fail, celebrating when we win. I love Valorant with you, doing new things together, cutting your hair, making drawings together, listening to music, laughing until our stomachs hurt from tickles, going for walks, discovering Iceland with you. I love watching The Boondocks, eating together, sharing moments big and small. I love everything about you. Every time I see you smile, my eyes shine, and I want to see that smile for the rest of my life. Maybe I’m not the one for you, but I don’t want to know anyone else.</p>
+
+<div id="gate">
+    <p><strong>Security Check</strong></p>
+    <p>What is the word we always say in Spanish?</p>
+    <input id="pw" placeholder="Enter word">
+    <button onclick="check()">Confirm</button>
+</div>
+
+<div id="secret">
+<h2>Oath Accepted</h2>
+
+<p>You unlocked this oath because you are my destiny. Every laugh, every game, every walk, every quiet moment — I want them all with you. You are my home, my depth, my forever. Nothing else matters, only us.</p>
+
+<div class="gallery">
+<img src="https://i.postimg.cc/3dWjtLCG/316077c2225cab434b441352ab250956.jpg">
+<img src="https://i.postimg.cc/NKH6c5nk/58c8338ec1aa4e8d92f4db21bba85864.jpg">
+<img src="https://i.postimg.cc/yWpc3m40/198ac88f06778225e4b5e5c93bc34654.jpg">
+<img src="https://i.postimg.cc/CdrknGTR/2d737f5d299aafa41f11c46742aab42c.jpg">
+<img src="https://i.postimg.cc/hhZTQLWQ/3366ed22f1bc938b110cc8523e5d330f.jpg">
+<img src="https://i.postimg.cc/kDYKRQ3V/510d6d0a2aeca0b3b2490f6cc876502e.jpg">
+<img src="https://i.postimg.cc/w34LRX8m/6c6e596825875ef92479b4c62e722505.jpg">
+<img src="https://i.postimg.cc/HjvX8wD7/8f48a6d1c17d00effbdeb1a7790d8a56.jpg">
+<img src="https://i.postimg.cc/6TpCQHSZ/951e55e8312fad284c31dc1db1c7b1ae.jpg">
+<img src="https://i.postimg.cc/147wVGh5/9dfb84bedeff528898bc946d2883dc39.jpg">
+<img src="https://i.postimg.cc/MX3Vf72v/a06de8b4857eebe67fed688417af6aec-(1).jpg">
+<img src="https://i.postimg.cc/XX1dBfSg/b42ac1cd240a2f8ff4a13b7c22361c5d.jpg">
+<img src="https://i.postimg.cc/G9gGTFwP/d26cc4e1aa479cc53199d661ffc3fa2a.jpg">
+<img src="https://i.postimg.cc/vD2fxrFW/e3b61aa3f7b051fcaef899cb0d84df01.jpg">
+<img src="https://i.postimg.cc/CdrknGT5/f034a140bf8e42ab7d79d36aec53b8d2.jpg">
+</div>
+
+</div>
+
+<script>
+setTimeout(() => {
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("main").style.display = "block";
+}, 3500);
+
+function check() {
+    const pw = document.getElementById("pw").value.toLowerCase();
+    if (pw === "cosita") {
+        document.getElementById("secret").style.display = "block";
+        document.getElementById("gate").style.display = "none";
+    } else {
+        alert("Oath rejected.");
+    }
+}
+</script>
+
+</body>
+</html>
